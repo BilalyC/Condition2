@@ -13,10 +13,20 @@ namespace Exo2
             Console.WriteLine("Veillez taper votre âge :");
             int age = int.Parse(Console.ReadLine());
 
-            if (age >= 18)
+            if (age >= 18 && age < 120) {
                 Console.WriteLine("Vous avez " + age + " ans, vous êtes donc majeur.");
+            }
             else
-                Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineur.");
+            {
+                if (age >= 0 && age < 18)
+                {
+                    Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineur.");
+                }
+                else
+                {
+                    Console.WriteLine("Il y a une erreur dans l'age.");
+                }
+            }
         }
     }
 }
