@@ -18,7 +18,7 @@ namespace Exo2
             }
             else
             {
-                if (age >= 0 && age < 18)
+                if (age > 0 && age < 18)
                 {
                     Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineur.");
                 }
